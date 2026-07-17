@@ -248,7 +248,7 @@ function makePlayer() {
     speed: 280,
     fireCooldown: 0,
     shotIndex: 0,
-    lives: 1,
+    lives: 2,
     invuln: 2.5,
     hitRadius: 8,
     grazeRadius: 28,
