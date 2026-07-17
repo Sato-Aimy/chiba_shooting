@@ -19,7 +19,7 @@ const W = canvas.width;
 const H = canvas.height;
 const TAU = Math.PI * 2;
 const MAX_BOMBS = 3;
-const MAX_PLAYER_LIVES = 2;
+const MAX_PLAYER_LIVES = 1;
 const BOSS_PHASE_HP = 200;
 
 function loadSprite(fileName) {
@@ -248,7 +248,7 @@ function makePlayer() {
     speed: 280,
     fireCooldown: 0,
     shotIndex: 0,
-    lives: 2,
+    lives: 1,
     invuln: 2.5,
     hitRadius: 8,
     grazeRadius: 28,
