@@ -18,8 +18,8 @@ canvas.height = 720;
 const W = canvas.width;
 const H = canvas.height;
 const TAU = Math.PI * 2;
-const MAX_BOMBS = 7;
-const MAX_PLAYER_LIVES = 1;
+const MAX_BOMBS = 3;
+const MAX_PLAYER_LIVES = 2;
 const BOSS_PHASE_HP = 200;
 
 function loadSprite(fileName) {
