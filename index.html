@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>千葉カケルくんシューティングげーむ</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">きらきら しゅーてぃんぐ</p>
+          <h1>千葉カケルくんシューティングげーむ</h1>
+        </div>
+        <div class="mode-chip" id="modeChip">NORMAL</div>
+      </header>
+
+      <main class="layout">
+        <section class="stage-panel">
+          <div class="frame">
+            <canvas id="game" width="540" height="720" aria-label="シューティングゲーム画面"></canvas>
+            <div class="overlay overlay-menu" id="menuOverlay">
+              <div class="card">
+                <p class="card-kicker">あそびに きてね！</p>
+                <h2>千葉カケルくん<br />シューティングげーむ</h2>
+                <p class="card-copy">
+                  WASD / 矢印キーでうごいて、Spaceでショット。<br />
+                  Cでスペルカードをつかおう。<br />
+                  たのしく きらきら ぼうけんしよう！
+                </p>
+
+                <button class="start-button" id="startBtn" type="button">START</button>
+                <p class="hint">おはなし中は Space でつぎへ</p>
+              </div>
+            </div>
+            <div class="overlay overlay-end hidden" id="endOverlay">
+              <div class="card">
+                <p class="card-kicker" id="endKicker">STAGE CLEAR</p>
+                <h2 id="endTitle">戦いは終わった</h2>
+                <p class="card-copy" id="endCopy"></p>
+                <button class="start-button" id="restartBtn" type="button">RESTART</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="info-panel">
+          <section class="info-block">
+            <h3>現在値</h3>
+            <p>ライフ: <span id="playerLifeValue">0 / 1</span></p>
+            <p>ボム: <span id="playerBombValue">0 / 7</span></p>
+          </section>
+          <section class="info-block">
+            <h3>操作</h3>
+            <p>WASD: 移動</p>
+            <p>矢印キー: 移動</p>
+            <p>Space: ショット / 会話を進める</p>
+            <p>C: スペルカード</p>
+          </section>
+          <section class="info-block">
+            <h3>構成</h3>
+            <p>雑魚 → 小ボス → 雑魚 → 雑魚 → 大ボス</p>
+            <p>プレイ時間: 約15分</p>
+          </section>
+          <section class="info-block">
+            <h3>ひとこと</h3>
+            <p>おほしさまを いっぱい あつめよう！</p>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
