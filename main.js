@@ -252,7 +252,7 @@ function makePlayer() {
     invuln: 2.5,
     hitRadius: 8,
     grazeRadius: 28,
-    power: 2,
+    power: 1,
   };
 }
 
